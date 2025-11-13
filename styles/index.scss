@@ -47,7 +47,9 @@
                 .notice-brand-title{
                     top: 0;
                     left: 0;
-                    > h1 {font-size: 40px; font-weight: 600; margin-bottom: 14px;}
+                    > h1 {font-size: 40px; margin-bottom: 14px;
+                        > em { font-weight: 600; color: #fd8989;}
+                    }
                     > p {font-weight: 400; color: #aaa;}
                 }
                 .notice-product-list{

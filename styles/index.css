@@ -56,8 +56,11 @@
 }
 #wrap #notice-brand .notice-brand-content .notice-brand-rightarea .notice-brand-title > h1 {
   font-size: 40px;
-  font-weight: 600;
   margin-bottom: 14px;
+}
+#wrap #notice-brand .notice-brand-content .notice-brand-rightarea .notice-brand-title > h1 > em {
+  font-weight: 600;
+  color: #fd8989;
 }
 #wrap #notice-brand .notice-brand-content .notice-brand-rightarea .notice-brand-title > p {
   font-weight: 400;
@@ -200,8 +203,7 @@
 /* moblie */
 @media screen and (max-width: 767px) {
   #wrap {
-    max-width: 100%;
-    width: 100vw;
+    width: 100%;
     margin: 50px auto;
   }
   #wrap #notice-brand .notice-brand-content .notice-brand-rightarea {
