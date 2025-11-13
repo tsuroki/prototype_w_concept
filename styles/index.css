@@ -1,5 +1,4 @@
 #wrap {
-  max-width: 1420px;
   width: 100vw;
   margin: 50px auto 150px;
 }
@@ -22,7 +21,7 @@
   height: 650px;
 }
 #wrap #notice-brand .notice-brand-content .notice-brand-img {
-  width: 100%;
+  width: 650px;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -48,7 +47,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: left;
+  align-items: flex-start;
   height: 100%;
 }
 #wrap #notice-brand .notice-brand-content .notice-brand-rightarea .notice-brand-title {
@@ -69,10 +68,8 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   gap: 20px;
-}
-#wrap #notice-brand .notice-brand-content .notice-brand-rightarea .notice-product-list .notice-product {
-  width: 230px;
 }
 #wrap #notice-brand .notice-brand-content .notice-brand-rightarea .notice-product-list .notice-product > a {
   display: flex;
@@ -135,6 +132,7 @@
   color: #8e8e8e;
 }
 #wrap #recommend .recommend-product-list {
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -183,6 +181,41 @@
 #wrap #recommend .recommend-product-list .recommend-product > a .product-info .product-per-dis > span {
   color: #222;
   font-weight: 600;
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+  #wrap {
+    max-width: 1420px;
+  }
+  #wrap #notice-brand .notice-brand-content .notice-brand-rightarea {
+    display: flex;
+  }
+  #wrap #recommend #recommend-product-list .recommend-product4,
+  #wrap #recommend #recommend-product-list .recommend-product5,
+  #wrap #recommend #recommend-product-list .recommend-product6 {
+    display: block;
+  }
+}
+/* moblie */
+@media screen and (max-width: 767px) {
+  #wrap {
+    max-width: 100%;
+    width: 100vw;
+    margin: 50px auto;
+  }
+  #wrap #notice-brand .notice-brand-content .notice-brand-rightarea {
+    display: none;
+  }
+  #wrap #recommend .recommend-product-list .product4 {
+    display: none;
+  }
+  #wrap #recommend .recommend-product-list .product5 {
+    display: none;
+  }
+  #wrap #recommend .recommend-product-list .product6 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
